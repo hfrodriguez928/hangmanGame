@@ -1,3 +1,11 @@
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav.navbar-nav.navbar-right {
+   font-family: 'Poppins', sans-serif;
+}
+
 .jumbotronhalf{
 	padding: 24px 60px;
 	background-image: url(assets/css/assets/images/disney.jpg) ;
@@ -5,11 +13,11 @@
 }
 #hangmanDisney{
 	color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 #sideline{
   color: white;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .colmar{

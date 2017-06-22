@@ -6,9 +6,11 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 
 var wins = 0;
 var losses = 0;
-var innerHTML ={
+var innerHTML =
 	 "<p>wins: " + wins + "</p>" +
-     "<p>losses: " + losses + "</p>" +};
+     "<p>losses: " + losses + "</p>";
+
+document.querySelector("#game").innerHTML = html;
 
 var randWord, wordChoosen, hint, attempts, letterGuess, letterUsed=[], counter, userChoice;
 	var showAttempts=document.getElementById("attempts");
@@ -77,18 +79,4 @@ var randWord, wordChoosen, hint, attempts, letterGuess, letterUsed=[], counter, 
 	result();
 	comments();
 		}
-
-	hint.onclick=function(){  //	$hint.on("click", function(){
-
-		hints=["..assets/images/moana.jpg", "../images/cinderella.jpeg", "../images/pinocchio.jpg", "../images/tarzan.jpg"];
-		var hintIndex= randWord.indexOf(wordChoosen);
-		showClue.innerHTML=hints[hintIndex];
-	}
-
-	reset=function(){
-		correct.parentNode.removeChild(correct);
-    	letters.parentNode.removeChild(letters);
-    	showClue.innerHTML = "";
-		start();
-	}
 }
