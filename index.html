@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Disney Hangman</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-     <script src="assets/javascript/game.js"></script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Disney Hangman</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="composer.json"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 </head>
 
 <body>
 <div class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-          <a class="navbar-brand">Disney Hangman</a>
+          <a class="navbar-brand" href="#">Disney Hangman</a>
       </div>
           <ul class="nav navbar-nav navbar-right">
-            <li>The Happiest Game on Earth</li>
+            <li><a href="#">The Happiest Game on Earth</a></li>
           </ul>
         </div>
     </div>
@@ -26,40 +28,55 @@
 <div class="container wrapper">
   <div class="row">
     <div class="col-lg-12">
-      <!--Head image -->
-      <div class="jumbotron jumbotronhalf">
-      <h1 id="hangmanDisney">Disney Hangman</h1> <!--make fancy font -->
-       <p id="sideline">Guess the Disney movie!</p>
-        <p><a class="btn btn-primary btn-lg" onclick="start()">Play</a></p>
+      <div class="container">
+        <div class="jumbotron">
+      <h1>Disney Hangman</h1>
+      <p>Select a letter and try to guess the Disney movie! 
+If the letter is contained in the word, take another turn guessing the next letter.
+If the letter is not contained in the word, the letter you selected incorrectly will apear in "Letters Guessed Wrong."</p>
+        </div>
+    </div>
+    
+      <div class="col-lg-6 colmar">
+      <div class="panel-panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Word to Guess</h3>
+          </div>
+        <div class="panel-body">
+        <h2 id="wordToGuess">_ _ _ _ _ _ _ _ _</h2>
+      </div>
+      </div>
+      </div>
+
+ <div class="row">
+    <div class="col-lg-6 colmar">
+    <div class="panel-panel-default-1">
+      <div class="panel-body">
+      Letters Guessed Wrong: <span id="wrongGuesses"></span>
+      </div>
+      </div>
+        <div class="panel panel-default-1">
+        <div class="panel-body">
+        Guesses Left: <span id="numGuesses">9</span>
+        </div>
+        </div>
+      <div class="panel panel-default-1">
+      <div class="panel-body">
+      Win Counter: <span id="winCounter">0</span>
+      </div>
+      </div>
+      <div class="panel panel-default-1">
+      <div class="panel-body">
+      Loss Counter: <span id="lossCounter">0</span>
+      </div>
+      </div>
+    </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-6 colmar">
-      <div class="panel panel-danger">
-          <div class="panel-heading">
-          <h3 class="panel-title">Score</h3>
-          </div>
-          <div class="panel-body whois">
-          <p><a> id="wins">Wins</a></p>
-          <p><a>Losses</a></p>
-      </div>
-      </div>
-    </div>
-    <div class="col-lg-6 colmar">
-      <div class="panel panel-primary">
-          <div class="panel-heading">
-          <h3 class="panel-title">Current Word</h3>
-          </div>
-          <div class="panel-body player">
-            <div id="showWord"></div>
-            <dir id="attempts"></dir>
-            <div id="letterGuess"></div>
-          </div>
-      </div>
-    </div>
-  </div>  
-</div>
-
+  <p class="credits">&copy; Copyright 2017 Hayley Rodriguez </p>
+ 
+  <script src="assets/javascript/game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>  
 </body>
 </html>
