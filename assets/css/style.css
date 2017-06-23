@@ -1,14 +1,14 @@
 .navbar-brand {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .nav.navbar-nav.navbar-right {
-   font-family: 'Poppins', sans-serif;
+  font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .jumbotron{
     margin-bottom: 0px;
-    background-image: url(http://cdn.wallpapersafari.com/63/47/sXCKdy.jpg);
+    background: transparent;
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,19 @@
 }
 #hangmanDisney{
 	color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'waltograph42', sans-serif;
+}
+
+.panel-title{
+    color: white;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 45px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#wordToGuess{
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
 }
 
 body {
@@ -26,7 +38,8 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: black;
-    margin: 20px;
+    margin: 20px; 
+    background-image: url(http://cdn.wallpapersafari.com/63/47/sXCKdy.jpg);
 }
 
 .panel-panel-default-1 {
