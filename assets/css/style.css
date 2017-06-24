@@ -57,6 +57,7 @@ body {
     color: black;
     margin: 20px; 
     background-image: url(http://cdn.wallpapersafari.com/63/47/sXCKdy.jpg);
+    background-repeat: no-repeat;
 }
 
 .panel-panel-default-1 {
