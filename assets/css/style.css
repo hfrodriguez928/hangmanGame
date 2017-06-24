@@ -1,4 +1,21 @@
+@font-face {
+    font-family: 'waltographregular';
+    src: url('../Waltograph/waltograph42-webfont.woff') format('woff');
+         /*url('waltograph42-webfont.woff') format('woff');*/
+/*    font-weight: normal;
+    font-style: normal;*/
+
+}
+
 .navbar-brand {
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+h1 {
+  font-family: 'waltographregular', sans-serif;
+}
+
+p {
   font-family: 'Mouse Memoirs', sans-serif;
 }
 
@@ -29,7 +46,7 @@
 }
 
 #wordToGuess{
-    color: white;
+    color: black;
     text-shadow: black 0.3em 0.3em 0.3em;
 }
 
